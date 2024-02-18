@@ -1,8 +1,6 @@
 "use strict"
 
-const getTotalBalanceByGender = (users, gender) => {
-
-}
+const getTotalBalanceByGender = (clients, gender) => clients.filter(client => client.gender === gender) .reduce((acc, client) => acc + client.balance, 0);
 
 
 const clients = [
